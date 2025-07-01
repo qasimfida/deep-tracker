@@ -38,7 +38,7 @@
     }
 @media (max-width: 768px) {
 	.spotlight {
-		left: -600px;
+		left: -400px;
 		width: 800px;
 	}
   @keyframes move-light {
