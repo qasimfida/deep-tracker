@@ -1,6 +1,7 @@
 import './App.css'
-import tracker from './assets/tracker.png'
+import tracker from './assets/tracker.gif'
 import logo from "./assets/logo.png"
+import bg from "./assets/bg.png"
 
 
 function App() {
@@ -9,10 +10,13 @@ function App() {
 
       <div className={`flex w-screen min-h-screen  font-helvetica-neue bg-black overflow-hidden `}
       >
-        <div className="w-full px-5">
-          <div className="py-6 ">
+        <div className='absolute w-full h-full max-w-full bg-[#020203]' >
+          <img src={bg} className='w-full h-full max-w-full opacity-20' />
+        </div>
+        <div className="relative z-10 w-full px-5">
+           <a href="https://deepfi.tools/" target="_blank" rel="noopener noreferrer" className="block py-6 decoration-none">
             <img src={logo} alt="deepfi" />
-          </div>
+          </a>
           <div className="">
             <div className="relative z-10 flex flex-col items-center text-center md:mt-[144px] mt-16 ">
               <div className="flex items-center overflow-hidden content">
